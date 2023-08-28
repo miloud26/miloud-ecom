@@ -146,7 +146,7 @@ export default function Page({ params }: ProductType) {
       data.append("wilaya", wilaya);
       data.append("adress", adress);
       data.append("product", dataProduct.titleFr);
-      data.append("quantity", quantity);
+      data.append("quantity", `${quantity}`);
       data.append("model", model);
       data.append(
         "prix",
