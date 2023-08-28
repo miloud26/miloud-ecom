@@ -117,6 +117,10 @@ export default function Page({ params }: ProductType) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  const handleModel = (e: any) => {
+    e.target.classList.toggle("valid");
+  };
+
   const handleSubmitOrder = async (e: any) => {
     e.preventDefault();
     deleteOrder();
@@ -146,13 +150,13 @@ export default function Page({ params }: ProductType) {
       data.append("wilaya", wilaya);
       data.append("adress", adress);
       data.append("product", dataProduct.titleFr);
-      data.append("quantity", `${quantity}`);
+      data.append("quantity", quantity.toString());
       data.append("model", model);
       data.append(
         "prix",
         (+dataProduct.prix * +quantity + prixDelevred).toString()
       );
-      //data.append("upsell", timeDeffrent <= 5 * 60 * 60 * 1000 ? "1" : "");
+      data.append("upsell", timeDeffrent <= 5 * 60 * 60 * 1000 ? "oui" : "");
 
       await fetch(sheet, {
         method: "POST",
@@ -359,8 +363,40 @@ export default function Page({ params }: ProductType) {
                   </Typography>
                 </Box>
               </Box>
+              <Box
+                flexDirection={"row"}
+                className="flex justify-center items-center"
+              >
+                <Button
+                  onClick={(e) => {
+                    handleModel(e);
+                    setModel("rose");
+                  }}
+                  className="bg-[#f72d93] w-[70px] h-[40px] mr-4"
+                ></Button>
+                <Button
+                  onClick={(e) => {
+                    handleModel(e);
+                    setModel("bleu");
+                  }}
+                  className="bg-[#318ce7] w-[70px] h-[40px] mr-4"
+                ></Button>
+                <Button
+                  onClick={(e) => {
+                    handleModel(e);
+                    setModel("purple");
+                  }}
+                  className="bg-[#800080] w-[70px] h-[40px] mr-4"
+                ></Button>
+                <Button
+                  onClick={(e) => {
+                    handleModel(e);
+                    setModel("noir");
+                  }}
+                  className="bg-[#000] w-[70px] h-[40px] mr-4"
+                ></Button>
+              </Box>
               <Box className="my-6 w-full p-4  bg-[#dbeafe] rounded-lg mt-5">
-                {" "}
                 <Box className="w-fulll flex justify-between items-center ">
                   <FormControl>
                     <RadioGroup>

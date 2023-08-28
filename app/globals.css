@@ -133,3 +133,7 @@ html {
     translate: 0 0;
   }
 }
+
+.valid {
+  border: 2px yellow solid;
+}
