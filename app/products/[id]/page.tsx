@@ -121,17 +121,17 @@ export default function Page({ params }: ProductType) {
     e.preventDefault();
     deleteOrder();
 
-    const dateNewOrder = new Date().getTime().toString();
-    const lastOrder = localStorage.getItem("dateMakeOrder");
+    // const dateNewOrder = new Date().getTime().toString();
+    // const lastOrder = localStorage.getItem("dateMakeOrder");
 
-    let timeDeffrent = 0;
-    if (lastOrder) {
-      timeDeffrent = +dateNewOrder - +lastOrder;
-    } else {
-      timeDeffrent = +dateNewOrder;
-    }
+    // let timeDeffrent = 0;
+    // if (lastOrder) {
+    //   timeDeffrent = +dateNewOrder - +lastOrder;
+    // } else {
+    //   timeDeffrent = +dateNewOrder;
+    // }
 
-    localStorage.setItem("dateMakeOrder", dateNewOrder);
+    // localStorage.setItem("dateMakeOrder", dateNewOrder);
 
     try {
       const data = new FormData();
@@ -152,7 +152,7 @@ export default function Page({ params }: ProductType) {
         "prix",
         (+dataProduct.prix * +quantity + prixDelevred).toString()
       );
-      data.append("upsell", timeDeffrent <= 5 * 60 * 60 * 1000 ? "1" : "");
+      //data.append("upsell", timeDeffrent <= 5 * 60 * 60 * 1000 ? "1" : "");
 
       await fetch(sheet, {
         method: "POST",
