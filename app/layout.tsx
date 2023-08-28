@@ -15,7 +15,7 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const response = await fetch("https://ee-mxsk.onrender.com/pixel", {
+  const response = await fetch("https://ecom-api-miloud.onrender.com/pixel", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

@@ -121,17 +121,17 @@ export default function Page({ params }: ProductType) {
     e.preventDefault();
     deleteOrder();
 
-    // const dateNewOrder = new Date().getTime().toString();
-    // const lastOrder = localStorage.getItem("dateMakeOrder");
+    const dateNewOrder = new Date().getTime().toString();
+    const lastOrder = localStorage.getItem("dateMakeOrder");
 
-    // let timeDeffrent = 0;
-    // if (lastOrder) {
-    //   timeDeffrent = +dateNewOrder - +lastOrder;
-    // } else {
-    //   timeDeffrent = +dateNewOrder;
-    // }
+    let timeDeffrent = 0;
+    if (lastOrder) {
+      timeDeffrent = +dateNewOrder - +lastOrder;
+    } else {
+      timeDeffrent = +dateNewOrder;
+    }
 
-    // localStorage.setItem("dateMakeOrder", dateNewOrder);
+    localStorage.setItem("dateMakeOrder", dateNewOrder);
 
     try {
       const data = new FormData();
