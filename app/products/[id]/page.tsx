@@ -142,7 +142,7 @@ export default function Page({ params }: ProductType) {
         } - ${new Date().getHours()}H : ${new Date().getMinutes()}M`
       );
       data.append("name", name);
-      data.append("phone", phone);
+      data.append("phone", `\`${phone}`);
       data.append("wilaya", wilaya);
       data.append("adress", adress);
       data.append("product", dataProduct.titleFr);
