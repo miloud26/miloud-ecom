@@ -135,5 +135,5 @@ html {
 }
 
 .valid {
-  border: 2px yellow solid;
+  border: 2px yellow solid !important;
 }
