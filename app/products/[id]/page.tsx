@@ -182,7 +182,7 @@ export default function Page({ params }: ProductType) {
         </Button>
       </Box>
       <div>
-        <Modal open={open} onClose={handleClose}>
+        <Modal className="" open={open} onClose={handleClose}>
           <Box
             className="w-full lg:w-[650px]"
             sx={{
