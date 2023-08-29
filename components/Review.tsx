@@ -27,34 +27,34 @@ const Rev = ({
 
 let reviews = [
   {
-    name: "kader barouagui",
+    name: "بن يخلف محمد",
     rate: 5,
-    desc: "Achetez-en deux et bénéficiez de la livraison gratuiteAchetez-en deux et bénéficiez de la livraison gratuite",
+    desc: "منتج جيد ,حقيبة ستساعدك في السفر و تنظيم حاجياتك بسلاسة اكتر شكرا لكم",
   },
   {
-    name: "kader barouagui",
+    name: "بن علي مروى",
     rate: 5,
-    desc: "Achetez-en deux et bénéficiez de la livraison gratuiteAchetez-en deux et bénéficiez de la livraison gratuite",
+    desc: "منتج جميل و خاصة في الون الوردي وصلني في ظرف يوم واحد",
   },
   {
-    name: "kader barouagui",
+    name: "مقادر رابح",
     rate: 5,
-    desc: "Achetez-en deux et bénéficiez de la livraison gratuiteAchetez-en deux et bénéficiez de la livraison gratuite",
+    desc: "خدمة جيدة و مستوى عالي من الاتقان كما ان المنتج جيد جدا و جودة عالية",
   },
   {
-    name: "kader barouagui",
+    name: "رمضان ايمن",
     rate: 5,
-    desc: "Achetez-en deux et bénéficiez de la livraison gratuiteAchetez-en deux et bénéficiez de la livraison gratuite",
+    desc: "خدمة توصيل جيدة و سريعة وجودة المنتج لا غبار عليها و المعاملة كانت احسن",
   },
   {
-    name: "kader barouagui",
+    name: "حجوطي مروان",
     rate: 5,
-    desc: "Achetez-en deux et bénéficiez de la livraison gratuiteAchetez-en deux et bénéficiez de la livraison gratuite",
+    desc: "منتج جيد للغاية ساعدني كثيرا ولقد تم التوصل به في ظرف يوم واحد",
   },
   {
-    name: "kader barouagui",
+    name: "نوار عبد الرحيم",
     rate: 5,
-    desc: "Achetez-en deux et bénéficiez de la livraison gratuiteAchetez-en deux et bénéficiez de la livraison gratuite",
+    desc: "اخترت اللون الاسود وهو جميل جدا و خدمة التوصيل سريعة للغاية والمعاملة توووب",
   },
 ];
 
