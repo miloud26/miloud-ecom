@@ -20,6 +20,9 @@
 html {
   scroll-behavior: smooth;
   direction: rtl !important;
+  width: 130%;
+  overflow: hidden;
+  overflow-y: auto;
 }
 .arabic {
   font-family: "Noto Naskh Arabic", serif !important;

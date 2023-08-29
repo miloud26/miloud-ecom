@@ -255,7 +255,7 @@ export default function Page({ params }: ProductType) {
       <Box
         width="100%"
         height={"80px"}
-        className="bg-blue-400 my-5  flex justify-center items-center"
+        className="bg-blue-400 my-5  flex justify-center items-center w-full"
       >
         <Typography className="text-xl text-center font-bold w-full ">
           {lang
@@ -369,28 +369,42 @@ export default function Page({ params }: ProductType) {
                     handleModel(e);
                     setModel("rose");
                   }}
-                  className="bg-[#f72d93] w-[70px] h-[40px] mr-1 lg:mr-4"
+                  className="bg-[#f72d93] w-[40px] h-[40px] mr-0.5 lg:mr-4"
+                ></Button>
+                <Button
+                  onClick={(e) => {
+                    handleModel(e);
+                    setModel("vert");
+                  }}
+                  className="bg-[green] w-[40px] h-[40px] mr-4 "
+                ></Button>
+                <Button
+                  onClick={(e) => {
+                    handleModel(e);
+                    setModel("grie");
+                  }}
+                  className="bg-[#b7b7b7] w-[40px] h-[40px] mr-4 "
                 ></Button>
                 <Button
                   onClick={(e) => {
                     handleModel(e);
                     setModel("bleu");
                   }}
-                  className="bg-[#318ce7] w-[70px] h-[40px] mr-4"
+                  className="bg-[#318ce7] w-[40px] h-[40px] mr-4"
                 ></Button>
                 <Button
                   onClick={(e) => {
                     handleModel(e);
                     setModel("purple");
                   }}
-                  className="bg-[#800080] w-[70px] h-[40px] mr-4"
+                  className="bg-[#800080] w-[40px] h-[40px] mr-4"
                 ></Button>
                 <Button
                   onClick={(e) => {
                     handleModel(e);
                     setModel("noir");
                   }}
-                  className="bg-[#000] w-[70px] h-[40px] mr-4"
+                  className="bg-[#000] w-[40px] h-[40px] mr-4"
                 ></Button>
               </Box>
               <Box className="my-6 w-full p-4  bg-[#dbeafe] rounded-lg mt-5">
