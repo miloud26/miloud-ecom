@@ -107,7 +107,7 @@ export default function Page({ params }: ProductType) {
 
   useEffect(() => {
     if (quantity > 1) {
-      setPrixDelevred(0);
+      setPrixDelevred(500);
     } else {
       setPrixDelevred(500);
     }
@@ -429,9 +429,14 @@ export default function Page({ params }: ProductType) {
                         control={<Radio />}
                         label={
                           lang ? (
-                            <Typography className="font-bold text-xl">
-                              اشتري قطعتين ب 6000 دج
-                            </Typography>
+                            <>
+                              <Typography className="font-bold text-xl mb-2">
+                                اشتري قطعتين ب 6500 دج
+                              </Typography>
+                              <Typography className="text-lg">
+                                ستقوم بتوفير 900 دج
+                              </Typography>
+                            </>
                           ) : (
                             <Typography className="font-bold text-xl">
                               Achetez-en deux et bénéficiez de la livraison
