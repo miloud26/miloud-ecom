@@ -372,7 +372,7 @@ export default function Page({ params }: ProductType) {
                     handleModel(e);
                     setModel("rose");
                   }}
-                  className="bg-[#f72d93] w-[70px] h-[40px] mr-4"
+                  className="bg-[#f72d93] w-[70px] h-[40px] mr-1 lg:mr-4"
                 ></Button>
                 <Button
                   onClick={(e) => {
@@ -411,7 +411,7 @@ export default function Page({ params }: ProductType) {
                         label={
                           lang ? (
                             <Typography className="font-bold text-xl">
-                              قطعة واحدة و التوصيل 500 دج
+                              اشتري قطعة واحدة ب 3700 دج
                             </Typography>
                           ) : (
                             <Typography className="font-bold text-xl">
@@ -430,7 +430,7 @@ export default function Page({ params }: ProductType) {
                         label={
                           lang ? (
                             <Typography className="font-bold text-xl">
-                              اشتري اثنين واحصل على توصيل مجاني
+                              اشتري قطعتين ب 6000 دج
                             </Typography>
                           ) : (
                             <Typography className="font-bold text-xl">
