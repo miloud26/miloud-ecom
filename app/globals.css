@@ -20,13 +20,15 @@
 html {
   scroll-behavior: smooth;
   direction: rtl !important;
-  width: 130%;
+  width: 100%;
+}
+body {
   overflow: hidden;
   overflow-y: auto;
 }
 .arabic {
   font-family: "Noto Naskh Arabic", serif !important;
-  direction: rtl !important;
+  /*direction: rtl !important;*/
 }
 
 /* css for section & components niche card */

@@ -364,48 +364,48 @@ export default function Page({ params }: ProductType) {
                 flexDirection={"row"}
                 className="flex justify-center items-center"
               >
-                <Button
+                <Box
                   onClick={(e) => {
                     handleModel(e);
                     setModel("rose");
                   }}
-                  className="bg-[#f72d93] w-[40px] h-[40px] mr-0.5 lg:mr-4"
-                ></Button>
-                <Button
+                  className="bg-[#f72d93] w-[36px] h-[40px] mr-0.5 lg:mr-4"
+                ></Box>
+                <Box
                   onClick={(e) => {
                     handleModel(e);
                     setModel("vert");
                   }}
-                  className="bg-[green] w-[40px] h-[40px] mr-4 "
-                ></Button>
-                <Button
+                  className="bg-[green] w-[36px] h-[40px] mr-4 "
+                ></Box>
+                <Box
                   onClick={(e) => {
                     handleModel(e);
                     setModel("grie");
                   }}
-                  className="bg-[#b7b7b7] w-[40px] h-[40px] mr-4 "
-                ></Button>
-                <Button
+                  className="bg-[#b7b7b7] w-[36px] h-[40px] mr-4 "
+                ></Box>
+                <Box
                   onClick={(e) => {
                     handleModel(e);
                     setModel("bleu");
                   }}
-                  className="bg-[#318ce7] w-[40px] h-[40px] mr-4"
-                ></Button>
-                <Button
+                  className="bg-[#318ce7] w-[36px] h-[40px] mr-4"
+                ></Box>
+                <Box
                   onClick={(e) => {
                     handleModel(e);
                     setModel("purple");
                   }}
-                  className="bg-[#800080] w-[40px] h-[40px] mr-4"
-                ></Button>
-                <Button
+                  className="bg-[#800080] w-[36px] h-[40px] mr-4"
+                ></Box>
+                <Box
                   onClick={(e) => {
                     handleModel(e);
                     setModel("noir");
                   }}
-                  className="bg-[#000] w-[40px] h-[40px] mr-4"
-                ></Button>
+                  className="bg-[#000] w-[36px] h-[40px] mr-4"
+                ></Box>
               </Box>
               <Box className="my-6 w-full p-4  bg-[#dbeafe] rounded-lg mt-5">
                 <Box className="w-fulll flex justify-between items-center ">

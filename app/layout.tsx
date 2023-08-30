@@ -45,7 +45,7 @@ fbq('track', 'PageView');
         }}
       />
 
-      <body id="root" className="overflow-hidden overflow-y-auto">
+      <body id="root">
         <DataProvider>
           <Navbar />
           {children}
