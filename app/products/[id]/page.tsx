@@ -152,7 +152,7 @@ export default function Page({ params }: ProductType) {
       data.append("product", dataProduct.titleFr);
       data.append("quantity", quantity.toString());
       data.append("model", model);
-      data.append("prix", quantity == 1 ? "4100" : "6500");
+      data.append("prix", quantity == 1 ? "4100" : "7000");
       data.append("upsell", timeDeffrent <= 5 * 60 * 60 * 1000 ? "oui" : "");
 
       await fetch(sheet, {
@@ -355,7 +355,7 @@ export default function Page({ params }: ProductType) {
                     {lang ? "المجموع" : "Total"}
                   </Typography>
                   <Typography className="font-bold text-xl">
-                    {quantity == 1 ? "4100" : "6500"}
+                    {quantity == 1 ? "4100" : "7000"}
                     DZD
                   </Typography>
                 </Box>
